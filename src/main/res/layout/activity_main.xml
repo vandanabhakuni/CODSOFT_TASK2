@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#232323"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF5722"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/quote_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="........"
+        tools:text="Here the quote will be displayed"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/author_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quote_tv"
+        tools:text="Easy tuto"
+        android:text="........"
+        android:textColor="#aeaeae"
+        android:textSize="24sp"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="16sp"
+        android:gravity="center"/>
+    
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next>>"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
